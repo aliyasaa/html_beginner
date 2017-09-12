@@ -1,0 +1,79 @@
+<html> 
+<head>
+<script type="text/javascript">
+	function validateForm() {
+    var x = document.forms["reg"]["password"].value;
+    if (x == "") {
+        alert("Name must be filled out");
+        return false;
+    }
+} 
+</script>
+<style type="text/css">
+.top
+{
+	margin:0;
+	background-color:blue;
+}
+.top[input type="text"]
+{
+	font-size:12px;
+width:300px;
+	
+}
+.usr
+{
+	
+color:white;
+}
+.psd
+{
+	
+color:white;
+}
+.crt
+{
+border:1px solid red;
+border-radius:12%;
+width:100%;
+margin-top:7s0px;
+text-align:center;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="top">
+<h1 style="font-style:italic;color :white;">welcome to our site</h1> 
+<form name="reg" action="" onClick="return validateForm(reg)">
+<div class="usr">
+user name:&nbsp<input type="text" name="username"placeholder="enter your user name" required>
+
+password:&nbsp&nbsp<input type="password" placeholder="enter your password"/>
+<input type="button" name="submit" value="sign in" onclick="return validateForm(reg)">
+</div>
+
+</form>
+</div>
+<h3>create your account now</h3>
+<div class="reg">
+<table border="1">
+	<form action="reg.php">
+		
+		first name:&nbsp&nbsp<input type="text" name="fname"placeholder="enter your first  name"required><br>
+		last name :&nbsp&nbsp<input type="text" name="lname"placeholder="enter your last  name"required><br>
+		username:&nbsp&nbsp&nbsp<input type="text" name="uname"placeholder="enter your username"required><br>
+		password:&nbsp&nbsp&nbsp<input type="password" name="pwd"placeholder="enter your password"required><br>
+		<input type="button" name="submit" value="sign up">
+	</form>
+</table>
+</div>
+<img src="images.jpg" width="100%" height="295px">
+<div class="crt">
+	<p>this has true copy right &copy aliasaa 2008</p>
+</div>
+
+</body>          
+</html>
